@@ -5,3 +5,7 @@ greeting = f"Hello, I am Ben and I am {age} years old"
 print(greeting)
 
 # This is a comment in python
+
+for i in range(5):
+    print(5-i)
+print("Blast Off!")
