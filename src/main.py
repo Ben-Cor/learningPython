@@ -64,3 +64,15 @@ def person_info(job_title, name, age):
     print(f"{name} is a {job_title} and is {age} years old.")
 
 person_info("Software Engineer", age=36, name="Ben")
+
+
+#More list practice
+number_list = [1, 2, 3, 4, 5]
+
+def sum_numbers(numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+print(sum_numbers(number_list))
