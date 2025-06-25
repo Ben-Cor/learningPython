@@ -25,13 +25,17 @@ else:
 
 fizz_buzz_start = 1
 fizz_buzz_end = 100
+fizz_buzz_list = []
 
 for i in range(fizz_buzz_start, fizz_buzz_end + 1):
     if (i % 3 == 0) and (i % 5 == 0):
-        print ("FizzBuzz")
+        fizz_buzz_list.append ("FizzBuzz")
     elif i % 5 == 0:
-        print ("Buzz")
+        fizz_buzz_list.append ("Buzz")
     elif i % 3 == 0:
-        print ("Fizz")
+        fizz_buzz_list.append ("Fizz")
     else:
-        print(i)
+        fizz_buzz_list.append(i)
+
+for item in fizz_buzz_list:
+    print(item)
