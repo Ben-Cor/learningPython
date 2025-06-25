@@ -47,11 +47,11 @@ print(product_or_sum(50, 30))  # Should return 80
 #iterate through the first 10 numbers and, in each iteration,
 # print the sum of the current and previous number.
 
-def sum_current_previous():
-    for i in range(10):
+def sum_current_previous(number_range):
+    for i in range(0, number_range + 1):
         if i == 0:
             print(f"Current Number {i}, Previous Number None, Sum: {i}")
         else:
             print(f"Current Number {i}, Previous Number {i-1}, Sum: {i + (i-1)}")
 
-sum_current_previous()
+sum_current_previous(20)
