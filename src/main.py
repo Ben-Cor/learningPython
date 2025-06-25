@@ -39,3 +39,9 @@ for i in range(fizz_buzz_start, fizz_buzz_end + 1):
 
 for item in fizz_buzz_list:
     print(item)
+
+# Functions
+def greet(name):
+    return f"Hello, I am {name}!"
+
+print (greet("Ben"))
