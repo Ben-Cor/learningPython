@@ -46,7 +46,14 @@ def greet(name):
 
 print (greet("Ben"))
 
+# Function with variable number of arguments
 def greet_2(*name):
     return f"Hello, from {name[2]}!"
 
 print (greet_2("Ben", "Sian", "Sweep"))
+
+# Function with keyword arguments
+def dog_name(dog1, dog2, dog3):
+    print (f"My dog is {dog1}")
+
+dog_name(dog1="Sweep", dog2="Lassie", dog3="Spot")
