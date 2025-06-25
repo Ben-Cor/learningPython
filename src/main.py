@@ -57,3 +57,10 @@ def dog_name(dog1, dog2, dog3):
     print (f"My dog is {dog1}")
 
 dog_name(dog1="Sweep", dog2="Lassie", dog3="Spot")
+
+#function with positional and kwargs
+
+def person_info(job_title, name, age):
+    print(f"{name} is a {job_title} and is {age} years old.")
+
+person_info("Software Engineer", age=36, name="Ben")
