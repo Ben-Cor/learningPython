@@ -42,6 +42,11 @@ for item in fizz_buzz_list:
 
 # Functions
 def greet(name):
-    return f"Hello, I am {name}!"
+    return f"Hello, from {name}!"
 
 print (greet("Ben"))
+
+def greet_2(*name):
+    return f"Hello, from {name[2]}!"
+
+print (greet_2("Ben", "Sian", "Sweep"))
