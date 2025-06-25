@@ -76,3 +76,4 @@ def sum_numbers(numbers):
     return total
 
 print(sum_numbers(number_list))
+print(sum_numbers([1, 2, 3, -8, 50]))
