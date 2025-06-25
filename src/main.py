@@ -17,3 +17,21 @@ elif age > 18:
     print("You are over 18 years old")
 else:
     print("You are under 18 years old")
+
+# fizzbuzz
+# count up from one, replacing multiples of three with "Fizz",
+# multiples of five with "Buzz",
+# and multiples of both with "FizzBuzz"
+
+fizz_buzz_start = 1
+fizz_buzz_end = 100
+
+for i in range(fizz_buzz_start, fizz_buzz_end + 1):
+    if (i % 3 == 0) and (i % 5 == 0):
+        print ("FizzBuzz")
+    elif i % 5 == 0:
+        print ("Buzz")
+    elif i % 3 == 0:
+        print ("Fizz")
+    else:
+        print(i)
