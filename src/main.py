@@ -29,3 +29,17 @@ def sum_numbers(numbers):
 
 print(sum_numbers(number_list))
 print(sum_numbers([1, 2, 3, -8, 50]))
+
+# Given two integer numbers, write a Python program to return their product only
+# if the product is equal to or lower than 1000. Otherwise, return their sum
+
+def product_or_sum(a, b):
+    sum = a + b
+    product = a * b
+    if product > 1000:
+        return sum
+    else:
+        return product
+
+print(product_or_sum(20, 30))  # Should return 600
+print(product_or_sum(50, 30))  # Should return 80
