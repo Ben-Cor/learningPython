@@ -35,3 +35,11 @@ print("Printing only even characters...")
 for i in range(len(word)):
     if i % 2 == 0:
         print(word[i])
+
+
+word_remove_amount = input(f"Enter how many character you want to remove from the word (max of {len(word)}):")
+print ("Removing characters from your word...")
+# The next line will print the word
+# without the last 'word_remove_amount' characters
+# the word_remove_amount is a string, so we need to convert it to an integer
+print(word [:len(word) - int(word_remove_amount)])
