@@ -36,15 +36,15 @@ for i in range(len(word)):
     if i % 2 == 0:
         print(word[i])
 
+# While True loops continue until the condition is false or break is called.
+while True:
+    word_remove_amount = input(f"Enter how many characters you want to remove from the word (max of {len(word)}): ")
+    if not word_remove_amount.isdigit():  # Check if input is a valid number
+        print("Please enter a valid number!")
+    elif int(word_remove_amount) > len(word):
+        print("You can't remove more characters than the word has!")
+    else:
+        break  # Exit the loop if input is valid
 
-word_remove_amount = input(f"Enter how many character you want to remove from the word (max of {len(word)}):")
-
-if int(word_remove_amount) > len(word):
-    print("You can't remove more characters than the word has!")
-    input(f"Enter how many character you want to remove from the word (max of {len(word)}):")
-else:
-    print("Removing characters from your word...")
-    # The next line will print the word
-    # without the last 'word_remove_amount' characters
-    # the word_remove_amount is a string, so we need to convert it to an integer
-    print(word [:len(word) - int(word_remove_amount)])
+print("Removing characters from your word...")
+print(word[:len(word) - int(word_remove_amount)])
