@@ -38,12 +38,13 @@ for i in range(len(word)):
 
 
 word_remove_amount = input(f"Enter how many character you want to remove from the word (max of {len(word)}):")
-print ("Removing characters from your word...")
-# The next line will print the word
-# without the last 'word_remove_amount' characters
-# the word_remove_amount is a string, so we need to convert it to an integer
-if word_remove_amount > len(word):
+
+if int(word_remove_amount) > len(word):
     print("You can't remove more characters than the word has!")
-    print(f"Enter how many character you want to remove from the word (max of {len(word)}):")
+    input(f"Enter how many character you want to remove from the word (max of {len(word)}):")
 else:
+    print("Removing characters from your word...")
+    # The next line will print the word
+    # without the last 'word_remove_amount' characters
+    # the word_remove_amount is a string, so we need to convert it to an integer
     print(word [:len(word) - int(word_remove_amount)])
