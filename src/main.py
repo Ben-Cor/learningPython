@@ -49,16 +49,9 @@ while True:
 print("Removing characters from your word...")
 print(word[:len(word) - int(word_remove_amount)])
 
-number_list = [10, 2, 3, 4, 10]
-number_list_2 = [1, 2, 3, 4, 5]
 
-def check_first_and_last_same(numbers):
-    first_and_last = True
-    if numbers[0] == numbers[len(numbers) - 1]:
-        first_and_last = True
-    else:
-        first_and_last = False
-    print(first_and_last)
 
-check_first_and_last_same(number_list) #should be true
-check_first_and_last_same(number_list_2) #should be false
+# 8 ball code
+
+name = input("Hello, what is your name?")
+question = input(f"Hello {name}. What question do you want to ask the 8 ball?")
