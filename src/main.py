@@ -2,9 +2,20 @@
 
 name = input("Hello, what is your name?")
 while name == "":
-    name = input("You didn't enter a name, please enter your name.")
+    name = input("You didn't enter a name, please enter your name: "
+                 "If you wish to exit, please type exit and press enter: ")
+if name.lower() == "exit":
+    print("Goodbye!")
+    exit()
 
-question = input(f"Hello {name}. What question do you want to ask the 8 ball?")
+
+question = input(f"Hello {name}. What question do you want to ask the 8 ball? ")
+while question == "":
+    question = input(f"You didn't ask a question, {name}. Please ask a question for the 8 ball. "
+                     "If you wish to exit, please type exit and press enter: ")
+if question.lower() == "exit":
+    print("Goodbye!")
+    exit()
 
 import random
 random_number = random.randint(1, 9)
