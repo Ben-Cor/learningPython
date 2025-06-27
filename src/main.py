@@ -43,3 +43,39 @@ match random_number:
         answer = "Error: Invalid response."
 
 print(f"{name}, you asked - {question}. The 8 ball says: {answer}")
+
+
+weight = input("How much does your parcel weigh?")
+
+while weight == "" or not weight.isdigit():
+    weight = input("You didn't enter a weight, please enter the weight of your parcel: "
+                   "If you wish to exit, please type exit and press enter: ")
+
+cost = 0
+# Ground shipping
+if int(weight) <= 2:
+  cost = (int(weight) * 1.5) + 20
+elif int(weight) <= 6:
+  cost = (int(weight) * 3) + 20
+elif int(weight) <= 10:
+  cost = (int(weight) * 4) + 20
+else:
+  cost = (int(weight) * 4.75) + 20
+
+print(f"Total cost (Ground) = ${cost}")
+#premium is a flat rate
+print("Premium cost (Ground) = $125")
+
+#Drone Shipping
+
+dront_cost = 0
+if int(weight) <= 2:
+  drone_cost = (int(weight) * 4.5)
+elif int(weight) <= 6:
+  drone_cost = (int(weight) * 9)
+elif int(weight) <= 10:
+  drone_cost = (int(weight) * 12)
+else:
+  drone_cost = (int(weight) * 14.25)
+
+print(f"Total cost (Drone) = ${drone_cost}")
