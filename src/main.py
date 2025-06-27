@@ -51,6 +51,10 @@ while weight == "" or not weight.isdigit():
     weight = input("You didn't enter a weight, please enter the weight of your parcel: "
                    "If you wish to exit, please type exit and press enter: ")
 
+if weight.lower() == "exit":
+    print("Goodbye!")
+    exit()
+
 cost = 0
 # Ground shipping
 if int(weight) <= 2:
