@@ -42,4 +42,4 @@ match random_number:
     case default :
         answer = "Error: Invalid response."
 
-print(f"{name}, the 8 ball says: {answer}")
+print(f"{name}, you asked - {question}. The 8 ball says: {answer}")
