@@ -136,3 +136,22 @@ names_and_dogs_names = zip(owners, dogs_names)
 list_of_names_and_dogs_names = list(names_and_dogs_names)
 
 print(list_of_names_and_dogs_names)
+
+#while loop practice
+countdown = 10
+while countdown >= 0:
+  print(countdown)
+  countdown -= 1
+
+print("We have liftoff!")
+
+
+#for loop practice
+dog_breeds_available_for_adoption = ["french_bulldog", "dalmatian", "shihtzu", "poodle", "collie"]
+dog_breed_I_want = "dalmatian"
+
+for dog_breed in dog_breeds_available_for_adoption:
+  print(dog_breed)
+  if dog_breed == dog_breed_I_want:
+    print("They have the dog I want!")
+    break
