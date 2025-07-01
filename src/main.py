@@ -91,61 +91,11 @@
 #
 # print(f"Total cost (Drone) = ${drone_cost:.2f}")
 
+#functions practice
+def calculate_expenses(plane_ticket_price, car_rental_rate, hotel_rate, trip_time):
+  car_rental_total = car_rental_rate * trip_time
+  hotel_total = (hotel_rate * trip_time) - 10
+  trip_total = car_rental_total + hotel_total + plane_ticket_price
+  return trip_total
 
-ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
-
-for age in ages:
-  if age < 21:
-    continue
-  print(age)
-
-# comprehension practice
-grades = [90, 88, 62, 76, 74, 89, 48, 57]
-scaled_grades = [grade + 10 for grade in grades]
-print(scaled_grades)
-
-#further reviews
-single_digits = range(0, 10)
-squares = []
-
-for digit in single_digits:
-  print(digit)
-  squares.append(digit ** 2)
-
-print(squares)
-
-cubes = [digit ** 3 for digit in single_digits]
-print(cubes)
-
-hairstyles = ["bouffant", "pixie", "dreadlocks", "crew", "bowl", "bob", "mohawk", "flattop"]
-
-prices = [30, 25, 40, 20, 20, 35, 50, 35]
-
-last_week = [2, 3, 5, 8, 4, 4, 6, 2]
-
-# calculate the total price
-total_price=0
-for price in prices:
-  total_price += price
-
-# calculate the average price
-average_price = total_price / len(prices)
-print(f"Average Haircut Price: {average_price:.2f}")
-
-#form new prices at 5 less than prices
-new_prices = [price - 5 for price in prices]
-print(new_prices)
-
-# calculate total revenue
-total_revenue = 0
-for i in range(len(hairstyles)):
-  total_revenue += (prices[i] * last_week[i])
-print(f"Total Revenue: {total_revenue}")
-
-#average daily revenue
-average_daily_revenue = total_revenue/7
-print(average_daily_revenue)
-
-#cuts under 30 price
-cuts_under_30 = [hairstyles[i] for i in range(len(new_prices)) if new_prices[i] < 30]
-print(cuts_under_30)
+print(calculate_expenses(200, 100, 100, 5))
