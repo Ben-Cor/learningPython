@@ -157,3 +157,33 @@ most_popular1, most_popular2, most_popular3 = top_tourist_locations_italy()
 print(most_popular1)
 print(most_popular2)
 print(most_popular3)
+
+
+#function practice test
+#tripplanner welcome function created
+def trip_planner_welcome(name):
+  print("Welcome to tripplanner v1.0 " + name)
+
+trip_planner_welcome("Ben")
+
+#estimated time function created
+def estimated_time_rounded(estimated_time):
+  if estimated_time > 0:
+    rounded_time = round(estimated_time)
+    return rounded_time
+  else:
+    print("Please supply a time greater than 0")
+
+estimate = estimated_time_rounded(2.5)
+
+#destination_setup created
+def destination_setup(origin, destination, estimated_time, mode_of_transport = "Car"):
+  print("Your trip starts off in " + origin)
+  print("And you are traveling to " + destination)
+  print("You will be traveling by " + mode_of_transport)
+  print(f"It will take approximately {estimated_time} hours")
+
+destination_setup("Bath", "London", estimate)
+
+estimate = estimated_time_rounded(1.25)
+destination_setup("Bath", "Bristol", estimate, "Bike")
