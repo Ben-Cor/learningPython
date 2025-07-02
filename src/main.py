@@ -98,3 +98,13 @@ def larger_sum(lst1, lst2):
   return lst2
 
 print(larger_sum([1, 9, 5], [2, 3, 7]))
+
+def over_nine_thousand(lst):
+  sum = 0
+  for number in lst:
+    sum += number
+    if sum > 9000:
+      break
+  return sum
+
+print(over_nine_thousand([8000, 900, 120, 5000]))
