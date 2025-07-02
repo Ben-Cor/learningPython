@@ -121,6 +121,7 @@ print(delete_starting_evens([4, 8, 10]))
 def odd_indices(my_list):
   new_list = []
   for i in range(len(my_list)):
+  # for index in range(1, len(my_list), 2):
     if i % 2 != 0:
       new_list.append(my_list[i])
   return new_list
