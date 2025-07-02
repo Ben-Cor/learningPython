@@ -108,3 +108,12 @@ def over_nine_thousand(lst):
   return sum
 
 print(over_nine_thousand([8000, 900, 120, 5000]))
+
+def same_values(lst1, lst2):
+  matching_list = []
+  for i in range(len(lst1)):
+    if lst1[i] == lst2[i]:
+      matching_list.append(i)
+  return matching_list
+
+print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5]))
