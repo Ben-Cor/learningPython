@@ -114,9 +114,18 @@ else:
 print("Total: " + str(total))
 print("Is it over budget? " + str(over_budget))
 
+# List Manipulation
 
 def append_size(my_list):
   my_list.append(len(my_list))
   return my_list
 
 print(append_size([23, 42, 108]))
+
+
+def append_sum(my_list):
+  for i in range(3):
+    my_list.append(my_list[-1] + my_list[-2])
+  return my_list
+
+print(append_sum([1, 1, 2]))
