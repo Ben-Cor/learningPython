@@ -137,3 +137,10 @@ def larger_list(my_list1, my_list2):
     return my_list1[-1]
 
 print(larger_list([4, 10, 2, 5], [-10, 2, 5, 10]))
+
+def more_than_n(my_list, item, n):
+  if my_list.count(item) > n:
+    return True
+  return False
+
+print(more_than_n([2, 4, 6, 2, 3, 2, 1, 2], 2, 3))
