@@ -100,3 +100,11 @@ print(tenth_power(1))
 print(tenth_power(0))
 # 0 to the 10th power is 0
 print(tenth_power(2))
+
+def square_root(num):
+  return num ** 0.5
+
+print(square_root(16))
+# should print 4
+print(square_root(100))
+# should print 10
