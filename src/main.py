@@ -125,3 +125,11 @@ print(average(1, 100))
 # The average of 1 and 100 is 50.5
 print(average(1, -1))
 # The average of 1 and -1 is 0
+
+def remainder(num1, num2):
+  return (num1 * 2) % (0.5 * num2)
+
+print(remainder(15, 14))
+# should print 2
+print(remainder(9, 6))
+# should print 0
