@@ -92,39 +92,3 @@
 # print(f"Total cost (Drone) = ${drone_cost:.2f}")
 
 # loops practice
-def larger_sum(lst1, lst2):
-  if sum(lst1) >= sum(lst2):
-    return lst1
-  return lst2
-
-print(larger_sum([1, 9, 5], [2, 3, 7]))
-
-def over_nine_thousand(lst):
-  sum = 0
-  for number in lst:
-    sum += number
-    if sum > 9000:
-      break
-  return sum
-
-print(over_nine_thousand([8000, 900, 120, 5000]))
-
-def same_values(lst1, lst2):
-  matching_list = []
-  for i in range(len(lst1)):
-    if lst1[i] == lst2[i]:
-      matching_list.append(i)
-  return matching_list
-
-print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5]))
-
-
-def reversed_list(lst1, lst2):
-  reverse = True
-  for i in range(len(lst1)):
-    if lst1[i] != lst2[len(lst2) - 1 - i]:
-      reverse = False
-  return reverse
-
-print(reversed_list([1, 2, 3], [3, 2, 1]))
-print(reversed_list([1, 5, 3], [3, 2, 1]))
