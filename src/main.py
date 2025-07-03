@@ -108,3 +108,12 @@ print(square_root(16))
 # should print 4
 print(square_root(100))
 # should print 10
+
+def win_percentage(wins, losses):
+  games = wins + losses
+  return wins / (games/100)
+
+print(win_percentage(5, 5))
+# should print 50
+print(win_percentage(10, 0))
+# should print 100
