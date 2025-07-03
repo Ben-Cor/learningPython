@@ -133,3 +133,13 @@ print(remainder(15, 14))
 # should print 2
 print(remainder(9, 6))
 # should print 0
+
+def first_three_multiples(num):
+  for i in range(1, 4):
+    print(num*i)
+  return num*3
+
+first_three_multiples(10)
+# should print 10, 20, 30, and return 30
+first_three_multiples(0)
+# should print 0, 0, 0, and return 0
