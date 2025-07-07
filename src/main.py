@@ -92,11 +92,12 @@
 # print(f"Total cost (Drone) = ${drone_cost:.2f}")
 
 # strings practice
-my_name = "Ben"
-first_initial = my_name[0]
 
-first_name = "Rodrigo"
-last_name = "Villanueva"
+first_name = "Julie"
+last_name = "Blevins"
 
-new_account = last_name[0:5]
-temp_password = last_name[2:6]
+def account_generator(first_name, last_name):
+  account_name = first_name[0:3] + last_name[0:3]
+  return account_name
+
+new_account = account_generator(first_name, last_name)
