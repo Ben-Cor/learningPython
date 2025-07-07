@@ -146,3 +146,14 @@ def common_letters(string_one, string_two):
       common.append(letter)
   return common
 
+def username_generator(first_name, last_name):
+  if len(first_name) < 3:
+    user_name = first_name + last_name[0:4]
+    return user_name
+  elif len(last_name) < 4:
+     user_name = first_name[0:3] + last_name
+     return user_name
+  else:
+    user_name = first_name[0:3] + last_name[0:4]
+    return user_name
+
