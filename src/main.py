@@ -124,3 +124,10 @@ def get_length(string):
     length += 1
   return length
 
+def letter_check(word, letter):
+  output = False
+  for character in word:
+    if character == letter:
+      output = True
+  return output
+
