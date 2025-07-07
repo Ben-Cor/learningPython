@@ -112,3 +112,8 @@ company_motto = "Copeland's Corporate Company helps you capably cope with the co
 
 second_to_last = company_motto[-2]
 final_word = company_motto[-4:]
+
+first_name = "Bob"
+last_name = "Daily"
+
+fixed_first_name = "R" + first_name[1:]
