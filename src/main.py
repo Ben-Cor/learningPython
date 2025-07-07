@@ -101,3 +101,9 @@ def account_generator(first_name, last_name):
   return account_name
 
 new_account = account_generator(first_name, last_name)
+
+def password_generator(first_name, last_name):
+  password = first_name[(len(first_name)-3):] + last_name[(len(last_name)-3):]
+  return password
+
+temp_password = password_generator(first_name, last_name)
