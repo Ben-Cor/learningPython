@@ -117,3 +117,10 @@ first_name = "Bob"
 last_name = "Daily"
 
 fixed_first_name = "R" + first_name[1:]
+
+def get_length(string):
+  length = 0
+  for letter in string:
+    length += 1
+  return length
+
