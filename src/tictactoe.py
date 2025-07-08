@@ -9,14 +9,14 @@ def display_board(board):
     print("\nCurrent board:")
     for row in board:
         print(" | ".join(row)) # Join each row with ' | ' for better readability
-        print("-" * 14) # Separator line for better readability
+        print("-" * 9) # Separator line for better readability
 
 # Function to display board called at the start
 # creates 3 empty strings using _ as a throwaway variable, creates 3 lots of these strings in a list comprehension
 board = []
-for _ in range(4):
+for _ in range(3):
     row = []
-    for _ in range(4):
+    for _ in range(3):
         row.append(" ")
     board.append(row)
 display_board(board)
