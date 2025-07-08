@@ -9,11 +9,17 @@ def display_board(board):
     print("\nCurrent board:")
     for row in board:
         print(" | ".join(row)) # Join each row with ' | ' for better readability
-        print("-" * 9) # Separator line for better readability
+        print("-" * 14) # Separator line for better readability
 
 # Function to display board called at the start
 # creates 3 empty strings using _ as a throwaway variable, creates 3 lots of these strings in a list comprehension
-display_board([[" " for _ in range(3)] for _ in range(3)])
+board = []
+for _ in range(4):
+    row = []
+    for _ in range(4):
+        row.append(" ")
+    board.append(row)
+display_board(board)
 
 player_choice = input("Player 1 (X) - Which column do you want to play in? (1-3)?")
 if player_choice == "1":
