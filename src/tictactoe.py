@@ -22,3 +22,9 @@ elif player_choice == "2":
     print("You chose column 2")
 elif player_choice == "3":
     print("You chose column 3")
+elif player_choice.lower() == "exit":
+    print("Goodbye!")
+    exit()
+else:
+    print("Invalid choice. Please choose a column between 1 and 3.")
+    player_choice = input("Player 1 (X) - Which column do you want to play in? (1-3)? If You wish to exit, type 'exit': ")
