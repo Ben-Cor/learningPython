@@ -168,6 +168,8 @@ for transaction in daily_transactions:
 #clean up list
 transactions_clean = []
 for item in daily_transactions_split:
+  transaction = []
   for string in item:
-    transactions_clean.append(string.strip())
+    transaction.append(string.strip())
+  transactions_clean.append(transaction)
 print(transactions_clean)
