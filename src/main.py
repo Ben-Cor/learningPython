@@ -211,4 +211,12 @@ def color_count(colour):
       amount += 1
   return amount
 
-print(color_count('white'))
+#print(color_count('white'))
+
+#colour amount sold
+colors = ['red', 'yellow', 'green', 'white', 'black', 'blue', 'purple']
+
+for color in colors:
+  amount = color_count(color)
+  string = "Today we have sold {amount} {color} threads"
+  print(string.format(amount = amount, color = color))
