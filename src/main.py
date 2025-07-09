@@ -154,3 +154,17 @@ for poem in highlighted_poems_list:
   highlighted_poems_stripped.append(poem.strip())
 
 print(highlighted_poems_stripped)
+
+highlighted_poems_details = []
+for detail in highlighted_poems_stripped:
+  highlighted_poems_details.append(detail.split(':'))
+
+print(highlighted_poems_details)
+
+titles = []
+poets = []
+dates = []
+for detail in highlighted_poems_details:
+  titles.append(detail[0])
+  poets.append(detail[1])
+  dates.append(detail[2])
