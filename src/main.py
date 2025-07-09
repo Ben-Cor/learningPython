@@ -202,4 +202,13 @@ for thread in thread_sold:
       thread_sold_split.append(thread)
   else:
     thread_sold_split.append(thread)
-print(thread_sold_split)
+#print(thread_sold_split)
+
+def color_count(colour):
+  amount = 0
+  for thread in thread_sold_split:
+    if thread == colour:
+      amount += 1
+  return amount
+
+print(color_count('white'))
