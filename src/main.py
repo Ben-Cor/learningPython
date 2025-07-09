@@ -191,4 +191,4 @@ for transaction in transactions_clean:
 total_sales = 0
 for sale in sales:
   total_sales += float(sale.strip('$'))
-print(total_sales)
+print(f"{total_sales:.2f}")
