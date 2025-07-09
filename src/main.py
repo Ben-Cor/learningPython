@@ -162,5 +162,12 @@ daily_transactions = daily_sales_replaced.split(',')
 # add each transaction to a list
 daily_transactions_split = []
 for transaction in daily_transactions:
-  daily_transactions_split.append(transaction)
-print(daily_transactions_split)
+  daily_transactions_split.append(transaction.split(':'))
+#print(daily_transactions_split)
+
+#clean up list
+transactions_clean = []
+for item in daily_transactions_split:
+  for string in item:
+    transactions_clean.append(string.strip())
+print(transactions_clean)
