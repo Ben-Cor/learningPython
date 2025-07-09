@@ -192,3 +192,14 @@ total_sales = 0
 for sale in sales:
   total_sales += float(sale.strip('$'))
 print(f"Total sales: ${total_sales:.2f}")
+
+#thread sold
+thread_sold_split = []
+for thread in thread_sold:
+  if thread.find('&'):
+    threads = (thread.split('&'))
+    for thread in threads:
+      thread_sold_split.append(thread)
+  else:
+    thread_sold_split.append(thread)
+print(thread_sold_split)
