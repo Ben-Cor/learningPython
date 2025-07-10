@@ -68,3 +68,8 @@ print(decoding(response, 10))
 
 response_two = "bqdradyuzs ygxfubxq omqemd oubtqde fa oapq kagd yqeemsqe ue qhqz yadq eqogdq!"
 print(decoding(response_two, 14))
+
+response_unknown = "vhfinmxkl atox kxgwxkxw tee hy maxlx hew vbiaxkl hulhexmx. px'ee atox mh kxteer lmxi ni hnk ztfx by px ptgm mh dxxi hnk fxlltzxl ltyx."
+for i in range(26):
+    decoded_message = decoding(response_unknown, i+1)
+    print(f"Offset {i}: {decoded_message}")
