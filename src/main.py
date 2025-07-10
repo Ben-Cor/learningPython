@@ -65,3 +65,6 @@ print(decoding(reply, 10))
 
 response = "jxu evviuj veh jxu iusedt cuiiqwu yi vekhjuud."
 print(decoding(response, 10))
+
+response_two = "bqdradyuzs ygxfubxq omqemd oubtqde fa oapq kagd yqeemsqe ue qhqz yadq eqogdq!"
+print(decoding(response_two, 14))
