@@ -52,7 +52,7 @@ def decoding(alphabet, message):
     for i in range (len(message)):
         if message[i] in alphabet:
             index = alphabet.find(message[i])
-            output += alphabet[index - 10]
+            output += alphabet[(index + 10) % 26] # Wrap around using modulo 26
         else:
             output += message[i]
     return output
