@@ -50,11 +50,11 @@ message = "xuo jxuhu! jxyi yi qd unqcfbu ev q squiqh syfxuh. muhu oek qrbu je tu
 def decoding(alphabet, message):
     output = ""
     for i in range (len(message)):
-        if message[i] != " ":
+        if message[i] in alphabet:
             index = alphabet.find(message[i])
             output += alphabet[index - 10]
         else:
-            output += " "
+            output += message[i]
     return output
 
 print(decoding(alphabet, message))
