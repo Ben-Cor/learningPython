@@ -44,3 +44,17 @@
 #
 # print(f"{name}, you asked - {question}. The 8 ball says: {answer}")
 
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+message = "xuo jxuhu! jxyi yi qd unqcfbu ev q squiqh syfxuh. muhu oek qrbu je tusetu yj? y xefu ie! iudt cu q cuiiqwu rqsa myjx jxu iqcu evviuj!"
+
+def decoding(alphabet, message):
+    output = ""
+    for i in range (len(message)):
+        if message[i] != " ":
+            index = alphabet.find(message[i])
+            output += alphabet[index - 10]
+        else:
+            output += " "
+    return output
+
+print(decoding(alphabet, message))
