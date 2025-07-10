@@ -73,3 +73,8 @@ response_unknown = "vhfinmxkl atox kxgwxkxw tee hy maxlx hew vbiaxkl hulhexmx. p
 for i in range(26):
     decoded_message = decoding(response_unknown, i+1)
     print(f"Offset {i}: {decoded_message}")
+
+from datetime import datetime
+
+current_time = datetime.now()
+print(current_time)
