@@ -5,7 +5,7 @@ import custom_module
 
 current_year = dt.datetime.now().year
 current_time = dt.datetime.now().time
-print(current_year)
+print(f"It is currently {current_year}")
 
 #generate target year
 target_year = randint(1066, 2020)
@@ -19,4 +19,4 @@ cost = Decimal(0.55) * (current_year - target_year)
 TWOPLACES = Decimal("0.01")
 cost = cost.quantize(TWOPLACES)
 
-print(destination)
+print(custom_module.generate_time_travel_message(year=target_year, destination = destination, cost = cost))
